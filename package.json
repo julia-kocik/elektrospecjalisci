@@ -15,7 +15,7 @@
     "build:clean": "mkdirp dist && rm -r dist && mkdirp dist",
     "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
     "build:sass": "node-sass --output-style compact -o dist/css src/sass",
-    "build:autoprefixer": "globstar autoprefixer-cli \"dist/css/*.css\"",
+    "build:autoprefixer": "npx postcss \"dist/css/*.css\" --use autoprefixer",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
     "server": "json-server --port 3131 --no-cors --delay 250 --watch dist/db/app.json",
@@ -28,10 +28,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.16.3"
+    "autoprefixer": "9",
+    "json-server": "^0.16.3",
+    "postcss-cli": "7.1.2"
   },
   "devDependencies": {
-    "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
     "copyfiles": "^2.1.0",
     "eslint": "^5.14.1",

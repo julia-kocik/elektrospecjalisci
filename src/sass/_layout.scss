@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $font-size;
+    line-height: 1.7;
+    font-family: $main-font;
+    color: $color-gray;
+    background-color: $color-white;
+}
+
+
+.header {
+    height: 7%
+}
+
+.page-container {
+    height: 93%;
+}

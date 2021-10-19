@@ -22,8 +22,8 @@
                 <ul>
                     <li><a href="#">Strona główna</a></li>
                     <li><a href="#offer">Oferta</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -100,17 +100,51 @@
             </div>
         </section>
          <!-- ABOUT US-->
-        <section class="about">
+        <section class="about" id="about">
 
         </section>
         <!-- CONTACT-->
-        <section class="contact">
-
+        <section class="contact" id="contact">
+          <div class="contact-content">
+            <h5>Napisz do nas lub zadzwoń!</h5>
+            <p>E-mail: biuro@montroe.com</p>
+            <p>Telefon: 888-888-888</p>
+          </div>
+          <form
+              action="https://formspree.io/f/xyylawko"
+              method="POST"
+          >
+            <label>
+              Imię:
+              <input type="text" name="name">
+            </label>
+            <label>
+              Email:
+              <input type="email" name="_replyto">
+            </label>
+            <label>
+              Wiadomość:
+              <textarea name="message" rows="4" cols="50"></textarea>
+            </label>
+            <button type="submit">Wyślij</button>
+          </form>
         </section>
         <!-- FOOTER-->
         <footer class="footer">
-          <div class="copyright"><span>© Copyright 2021 Montroe Mave Sp. z o.o.</span></div>
+          <div class="copyright">
+            <span> Montroe Mave Sp. z o.o.</span>
+            <span>
+              al. Solidarności 68/121
+            </span>
+            <span>
+              00-240 Warszawa
+            </span>
+            <span>NIP: 5252826564</span>
+          </div>
           <div class="icons">
+            <span>
+              © Copyright 2021
+            </span>
             <ul>
               <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
               <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>

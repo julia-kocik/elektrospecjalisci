@@ -1,4 +1,65 @@
 .contact {
-    height: 500px;
-    border: 1px solid red;
+    height: 550px;
+    background: linear-gradient(45deg, $color-green, $color-blue, $color-green);
+    display: flex;
+    .contact-content {
+        flex: 0 0 50%;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h5 {
+            font-size: 48px;
+            padding: 0;
+            margin: 0 0 40px 0;
+        }
+        p {
+            font-size: 32px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex: 0 0 50%;
+        position: relative;
+        label {
+            font-size: 24px;
+            color: $color-white;
+            margin: 10px 40px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            input, textarea {
+                outline: none;
+                border-radius: 5px;
+                border: none;
+                padding: 5px;
+            }
+            textarea {
+                resize: none;
+            }
+        }
+        button {
+            background-color: $color-white;
+            color: $color-blue;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 40px;
+            font-size: 20px;
+        }
+    }
+    form::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        width: 2px;
+        height: 80%;
+        background: $color-white;
+    }
 }

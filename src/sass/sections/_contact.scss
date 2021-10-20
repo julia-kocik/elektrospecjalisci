@@ -1,5 +1,5 @@
 .contact {
-    height: 562px;
+    height: 100vh;
     background: linear-gradient(45deg, $color-green, $color-blue, $color-green);
     display: flex;
     .contact-content {
@@ -52,6 +52,10 @@
             border-radius: 5px;
             margin: 20px 40px;
             font-size: 20px;
+            transition: $transition;
+            &:hover {
+                color: $color-green;
+            }
         }
     }
     form::after {
@@ -62,4 +66,31 @@
         height: 80%;
         background: $color-white;
     }
+}
+
+
+@include tablet {
+    .contact {
+        height: auto;
+        flex-direction: column;
+        .contact-content {
+            margin: 40px 0;
+        }
+        form {
+            align-items: center;
+            margin: 40px 0;
+        }
+        form::after {
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 2px;
+            background: $color-white;
+        }
+    }
+}
+  
+@include mobile {
+    
 }

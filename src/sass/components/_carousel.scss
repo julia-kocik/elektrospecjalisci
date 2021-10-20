@@ -24,3 +24,12 @@
     font-family: $main-font;
 }
 
+@include tablet {
+    .carousel-inner, .carousel-item {
+        max-height: 432px
+    }
+}
+  
+@include mobile {
+    
+}

@@ -39,3 +39,26 @@
     }
 }
 
+@include tablet {
+    .offer-container {
+        flex-direction: column;
+        height: auto;
+        margin: 40px 0;
+        .left-offer-container {
+            margin: 40px 0;
+        }
+        .right-offer-container {
+            margin: 40px 0;
+            h5 {
+                width: 620px;
+            }
+        }
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+}
+  
+@include mobile {
+    
+}

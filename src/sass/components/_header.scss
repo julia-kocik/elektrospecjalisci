@@ -36,3 +36,20 @@
         }
     }
 }
+
+  
+@include tablet {
+    .header {
+        .logo {
+            flex: 0 0 30%;
+        }
+        .nav {
+            flex: 0 0 70%;
+        }
+    }
+}
+  
+@include mobile {
+    
+}
+    

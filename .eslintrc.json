@@ -1,12 +1,20 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jquery": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:jquery/deprecated"
+    ],
     "parserOptions": {
-        "ecmaVersion": 2015
+        "ecmaVersion": 2015,
+        "sourceType": "module"
     },
+    "plugins": [
+        "jquery"
+    ],    
     "rules": {
         "indent": [
             "error",
@@ -27,5 +35,5 @@
         "no-console": [
             "off"
         ]
-    }
+    } 
 }

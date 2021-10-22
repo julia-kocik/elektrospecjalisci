@@ -1,4 +1,25 @@
-/* eslint-disable jquery/no-css */
+let elementsArray = document.querySelectorAll('section');
+//console.log(elementsArray);
+window.addEventListener('scroll', fadeIn ); 
+function fadeIn() {
+  for (let i = 0; i < elementsArray.length; i++) {
+    const elem = elementsArray[i];
+    const distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+    if (distInView < 0) {
+      elem.classList.add('inView');
+    } else {
+      elem.classList.remove('inView');
+    }
+  }
+}
+fadeIn();
+
+
+const test = document.getElementById('about').getBoundingClientRect().top;
+console.log(window.innerHeight);
+
+console.log(test);
+/*
 window.onload = function() {
   const $doc = $(document);
   const $offer = $('#offer');
@@ -35,7 +56,6 @@ window.onload = function() {
   });
 };
 
-/*
 window.addEventListener('scroll', function() {
              document.getElementById('headerbgid').style.opacity = 1 - pageYOffset/700;
         });

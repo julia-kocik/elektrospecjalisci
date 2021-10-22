@@ -21,3 +21,12 @@ body {
 .page-container {
     height: 93%;
 }
+
+section {
+    opacity: 0;
+    transition: 3s all;
+}
+
+.inView {
+    opacity: 1;
+}

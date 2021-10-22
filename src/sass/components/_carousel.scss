@@ -2,15 +2,18 @@
 /* Carousel */
 .slider {
     height: 100vh;
-    border: 3px solid red;
     .slider-inner {
         height: 100%;
-        border: 3px solid green;
         position: relative;
-        img {
+        .slider-item {
             height: 100%; 
             width: 100%;
-            border: 3px solid violet;
+            transition: 2s all;
+            opacity: 0.8;
+        }
+        .slider-fade {
+            transition: 2s all;
+            opacity: 1;
         }
         i {
             position: absolute;
@@ -46,28 +49,18 @@
     font-family: $main-font;
 }
 
+*/
+
+
 @include tablet {
-    .carousel {
+    .slider {
         height: 600px;
-    }
-    
-    .carousel-inner {
-        height: 100%;
-    }
-    .carousel-item {
-        height: 100%;
-    }
-    
-    .carousel-item img {
-        height: 100%; 
-        object-fit: cover;
-    }
+    }    
 }
+
   
 @include mobile {
-    .carousel {
+    .slider {
         display: none;
     }
 }
-
-*/

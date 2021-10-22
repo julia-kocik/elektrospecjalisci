@@ -15,10 +15,10 @@ function fadeIn() {
 fadeIn();
 
 
-const test = document.getElementById('about').getBoundingClientRect().top;
-console.log(window.innerHeight);
+//const test = document.getElementById('about').getBoundingClientRect().top;
+//console.log(window.innerHeight);
 
-console.log(test);
+//console.log(test);
 /*
 window.onload = function() {
   const $doc = $(document);

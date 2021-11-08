@@ -347,6 +347,7 @@ template {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-size: 18px;
   line-height: 1.7;
   font-family: "Chivo", Sans-Serif;
@@ -743,8 +744,9 @@ section {
 
 .contact .contact-content h5 {
   font-size: 48px;
-  padding: 0;
+  padding: 0 20px;
   margin: 0 0 40px 0;
+  text-align: center;
 }
 
 .contact .contact-content p {
@@ -814,6 +816,10 @@ section {
   .contact .contact-content {
     margin: 40px 0;
   }
+  .contact .contact-content h5, .contact .contact-content p {
+    padding: 0 10px;
+    margin: 10px 0;
+  }
   .contact form {
     align-items: center;
     margin: 40px 0;
@@ -837,7 +843,7 @@ section {
     margin: 40px 0;
   }
   .contact .contact-content h5, .contact .contact-content p {
-    padding: 0;
+    padding: 0 10px;
     margin: 10px 0;
   }
   .contact .contact-content h5 {

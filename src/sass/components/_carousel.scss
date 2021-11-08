@@ -24,7 +24,7 @@
             transform: translate(-50%, -50%);
         }
         .prev {
-            left: 580px;
+            left: 450px;
         }
         
     }
@@ -32,29 +32,14 @@
 }
 
 
-
-/*
-.carousel-caption {
-    padding-top: 0;
-    padding-bottom: 0;
-    right: auto;
-    left: auto;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.carousel-caption h5 {
-    font-size: 60px;
-    font-family: $main-font;
-}
-
-*/
-
-
 @include tablet {
     .slider {
         height: 600px;
+        .slider-inner {
+            .prev {
+                left: 300px;
+            }
+        }
     }    
 }
 

@@ -43,7 +43,8 @@
     }
     showPhoto(currentItem);
   });
-  // show prev person
+
+  // show prev photo
   prevBtn.addEventListener('click', function () {
     currentItem--;
     if (currentItem < 0) {

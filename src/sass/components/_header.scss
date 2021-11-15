@@ -7,8 +7,8 @@
     width: 100%;
     .logo {
         flex: 0 0 50%;
-        font-family: $second-font;
-        font-size: 2rem;
+        font-family: $main-font;
+        font-size: 24px;
         display: flex;
         align-items: center;
         h2 {
@@ -51,9 +51,14 @@
     .header {
         .logo {
             flex: 0 0 30%;
+            font-size: 20px;
         }
         .nav {
             flex: 0 0 70%;
+            font-size: 20px;
+            .nav-ul {
+                padding: 0 10px;
+            }
             .burger {
                 display: none;
             }
@@ -68,10 +73,12 @@
         .logo {
             height: 100%;
             justify-content: center;
+            flex: 0 0 40%;
         }
         .nav {
             justify-content: flex-end;
             height: 100%;
+            flex: 0 0 40%;
             .nav-ul {
                 border-top: 1px solid $color-white;
                 position: absolute;

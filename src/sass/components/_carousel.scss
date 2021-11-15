@@ -19,27 +19,26 @@
             position: absolute;
             font-size: 36px;
             color: $color-white;
-            right: 100px;
             top: 50%;
             transform: translate(-50%, -50%);
+            &:hover {
+                color: $color-green;
+                cursor: pointer;
+            }
         }
         .prev {
-            left: 450px;
+            left: 100px;
         }
-        
-    }
-    
+        .next {
+            right: 100px;
+        }
+    }   
 }
 
 
 @include tablet {
     .slider {
         height: 600px;
-        .slider-inner {
-            .prev {
-                left: 300px;
-            }
-        }
     }    
 }
 

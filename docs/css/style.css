@@ -457,6 +457,7 @@ section {
     flex: 0 0 40%;
   }
   .header .nav {
+    background-color: #0097e6;
     justify-content: flex-end;
     height: 100%;
     flex: 0 0 40%;
@@ -950,7 +951,5 @@ section {
     padding-right: 0;
   }
 }
-
-/* Pages / Views */
 
 /*# sourceMappingURL=style.css.map */

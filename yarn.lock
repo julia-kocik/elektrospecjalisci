@@ -3320,15 +3320,15 @@ jju@^1.1.0:
   resolved "https://registry.yarnpkg.com/jju/-/jju-1.4.0.tgz#a3abe2718af241a2b2904f84a625970f389ae32a"
   integrity sha1-o6vicYryQaKykE+EpiWXDzia4yo=
 
-jquery@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
-  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
-
 js-base64@^2.1.8:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
   integrity sha512-pZe//GGmwJndub7ZghVHz7vjb2LgC1m8B07Au3eYqeqv9emhESByMXxaEgkUkEqJe87oBbSniGYoQNIBklc7IQ==
+
+js-cookie-consent@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/js-cookie-consent/-/js-cookie-consent-1.3.1.tgz#d54a602dee0d4cf06f683d44d14f604ba8a283f0"
+  integrity sha512-SLtcSLc5TGQGVfbWXIWiUhLpdDxpAHV+NuZn23elCmRWEfGgFzA5U895b0U06O6Qjf0NR7Kt8kqoQlz4nRBozg==
 
 js-tokens@^4.0.0:
   version "4.0.0"

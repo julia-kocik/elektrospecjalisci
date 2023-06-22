@@ -1,17 +1,17 @@
 ## Electric Company
 
-https://julia-kocik.github.io/elektrospecjalisci/
+https://www.electro-specjalisci.pl
 
 ## How to use
 
 #### To local run:
 
-`yarn watch`
+`arn watch`
 
 ### Features and stack
 
-- @html
-- @css
-- @sass
-- @JS
+- @typescript
+- @react
+- @Firebase
+- @FireCMS
 - @RWD
